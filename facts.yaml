@@ -1,0 +1,7 @@
+---
+- name: gather hosts information
+  hosts: all
+  become: yes
+  tasks:
+  - name: gather facts
+    setup:
